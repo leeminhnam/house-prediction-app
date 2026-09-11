@@ -10,10 +10,11 @@ Hệ thống sử dụng các thuật toán học máy (Gradient Boosting, Rando
 house-prediction-app/
 │
 ├── backend/                  # Mã nguồn Backend (FastAPI, Machine Learning)
+│   ├── DATA/                 # Chứa dữ liệu
+│   │   └── vietnam_housing_dataset.csv # Tập dữ liệu huấn luyện mẫu
 │   ├── models/               # Chứa các file mô hình đã huấn luyện (.pkl, .pth, .json)
 │   ├── main.py               # File chạy server FastAPI (API endpoints)
 │   ├── requirements.txt      # Danh sách thư viện Python cần thiết
-│   └── vietnam_housing_dataset.csv # Tập dữ liệu huấn luyện mẫu
 │
 ├── frontend/                 # Mã nguồn Frontend (ReactJS + Vite)
 │   ├── src/                  # Mã nguồn giao diện (Components, Hooks, Services...)

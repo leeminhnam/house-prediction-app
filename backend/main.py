@@ -62,7 +62,7 @@ def load_models():
         gb_columns = json.load(f)
 
     # 2. Setup MLP Model and its preprocessing params
-    df = pd.read_csv(os.path.join(os.path.dirname(__file__), 'vietnam_housing_dataset.csv'))
+    df = pd.read_csv(os.path.join(os.path.dirname(__file__), 'DATA', 'vietnam_housing_dataset.csv'))
     price_cols = [c for c in df.columns if 'price' in c.lower()]
     TARGET_COL = price_cols[0] if len(price_cols) > 0 else df.columns[-1]
 
